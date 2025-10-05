@@ -6,13 +6,13 @@ var map = new ol.Map({
     view: new ol.View({
          maxZoom: 28, minZoom: 1, projection: new ol.proj.Projection({
             code: 'EPSG:31256',
-            //extent: [-16331197.435132, -24863110.695161, 16332605.455579, 14415977.266600],
+            //extent: [-620299.046744, 90635.037958, 19851.538639, 398863.323701],
             units: 'm'})
     })
 });
 
 //initial view - epsg:3857 coordinates if not "Match project CRS"
-map.getView().fit([-146990.740429, 204781.583354, 110393.898137, 340076.284030], map.getSize());
+map.getView().fit([-392685.916857, 160188.450011, 122083.360276, 430777.851363], map.getSize());
 
 ////small screen definition
     var hasTouchScreen = map.getViewport().classList.contains('ol-touch');
